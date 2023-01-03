@@ -1,19 +1,18 @@
 <template>
   <div id="app">
     <MainMenu />
-    <HelloWorld msg="Welcome to the vue app home"/>
-    
+    <b-container class="my-4">
+      <router-view></router-view>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MainMenu from './components/nav.vue'
+import MainMenu from './components/MainMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     MainMenu
   }
 }
@@ -25,7 +24,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: black;
+
 }
 </style>
