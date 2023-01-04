@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router';
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import { BootstrapVue, IconsPlugin, BadgePlugin } from 'bootstrap-vue';
 import Vuelidate from 'vuelidate';
 
 
@@ -13,6 +13,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
+Vue.use(BadgePlugin)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 

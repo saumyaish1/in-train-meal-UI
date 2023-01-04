@@ -1,25 +1,27 @@
 <template>
-  <div>
+  <div class="card-style">
     <b-card class="card-style">
       <b-button v-b-modal.modal-1>
 
-        <b-card-img top="true" alt="PICTURE of meal" :src="item.itemImage" height="250px" width="250px" />
+        <b-card-img top="true" alt="PICTURE of meal" :src="item.IMG"  />
       </b-button>
-      <b-card title={{item.itemName}}>
+      <b-card :title="item.Item_name">
         <hr />
 
         <b-card-text>
           <b-row>
             <b-col md="6">
+            {{ item.Type }}
             </b-col>
             <b-col md="6">
               <h6>Quantity</h6>
 
             </b-col>
+          
           </b-row>
         </b-card-text>
         <b-row>
-          <b-col md="6">Price :{{ item.itemPrice }} /-RS</b-col>
+          <b-col md="6">Price :{{ item.Item_cost }} /-RS</b-col>
           <b-col md="6">
             <Button onClick={addToCartHandler} className="bg-warning text-white">
               Add to cart
@@ -32,16 +34,16 @@
 
     <b-modal id="modal-1">
       <b-modal-header closeButton>
-        <b-modal-title>{{ item.itemName }}</b-modal-title>
+        <b-modal-title>{{ item.Item_name }}</b-modal-title>
       </b-modal-header>
       <b-container>
         <div>
-          <b-card-img top="true" :src="item.itemImage" height="250px" />
+          <b-card-img top="true" :src="item.IMG" height="250px" />
 
         </div>
         <div>
-          <h3>{{ item.itemName }}</h3>
-          <h6>{{ item.itemDescription }}</h6>
+          <h3>{{ item.Item_name }}</h3>
+          <h6>{{ item.Discription }}</h6>
         </div>
       </b-container>
     </b-modal>
@@ -52,17 +54,18 @@
 export default {
   props: {
     item :{
-    itemName: String,
-    itemImage: String,
-    itemDescription: String,
-    itemPrice: Number}
+    Item_name: String,
+    IMG: String,
+    Discription: String,
+    Type : String,
+    Item_cost: Number}
   },
 
   name: 'FoodItem',
 
   data() {
     return {
-
+    
     };
   },
 
@@ -76,16 +79,21 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .card-style {
   display: inline-block;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  width :max-content;
+  height: max-content;
+  height: 515 px;
+
 
 }
 
 .card-img-top {
-  width: auto;
-  height: 15vw;
   object-fit: cover;
+      width: 100%;
+      max-width: 300px;
+      height: inherit;
 }
 </style>

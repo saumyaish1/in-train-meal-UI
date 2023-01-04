@@ -25,7 +25,7 @@
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav class="ml-auto margin">
                         <h2 class="text-info">
-                            <img src="../../public/img/logo1.png" alt="Logo" width="90" height="90" />
+                            <img src="../assets/food_coach.logo.png" alt="Logo" width="90" height="90" />
                             &nbsp;&nbsp;&nbsp;&nbsp; <b>In-Train Meal Delivery</b>
                         </h2>
                     </b-navbar-nav>

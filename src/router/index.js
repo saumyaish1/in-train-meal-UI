@@ -3,6 +3,7 @@ import AppHome from '@/components//AppHome.vue';
 import AboutPage from '@/components/About.vue';
 import RegisterPage from '@/components/Register.vue';
 import MealMenu from '@/components/MealMenu.vue';
+import MealCart from '@/components/Cart.vue';
 const router = new Router({
     mode: 'history', 
     routes: [
@@ -25,7 +26,13 @@ const router = new Router({
             name: 'meals',
             path: '/meals',
             component: MealMenu
+        },
+        {
+            name: 'Cart',
+            path: '/cart',
+            component: MealCart
         }
+
 
     ]      
 });
