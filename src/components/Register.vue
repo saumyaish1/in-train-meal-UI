@@ -8,7 +8,7 @@
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" name="email" id="email"
-                            placeholder="john.doe@example.com" v-model="form.email" @blur="$v.form.email.$touch()"
+                            placeholder="your email id goes here" v-model="form.email" @blur="$v.form.email.$touch()"
                             :class="{
                                         'is-invalid': shouldAppendErrorClass($v.form.email),
                                         'is-valid': shouldAppendValidClass($v.form.email)
@@ -55,17 +55,7 @@
                         <app-spinner v-if="processing" />
                     </div>
                 </form>
-                <div class="text-muted">
-                    <div>
-                        <small><strong>NOTE</strong></small>
-                    </div>
-                    <div>
-                        <small>Admin: Email is john.doe@example.com, Password is Password123#</small>
-                    </div>
-                    <div>
-                        <small>General: Email is jane.doe@example.com, Password is Password123#</small>
-                    </div>
-                </div>
+            
             </b-col>
         </b-row>
     </b-container>

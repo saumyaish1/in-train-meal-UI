@@ -4,7 +4,6 @@ import { BootstrapVue, IconsPlugin, BadgePlugin } from 'bootstrap-vue';
 import Vuelidate from 'vuelidate';
 
 
-
 // Import Bootstrap and BootstrapVue CSS files (order is important)
 // we can import even CSS files!
 import 'bootstrap/dist/css/bootstrap.css'

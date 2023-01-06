@@ -4,6 +4,8 @@ import AboutPage from '@/components/About.vue';
 import RegisterPage from '@/components/Register.vue';
 import MealMenu from '@/components/MealMenu.vue';
 import MealCart from '@/components/Cart.vue';
+// import LoginPage from '@/components/login.vue';
+
 const router = new Router({
     mode: 'history', 
     routes: [
@@ -22,6 +24,11 @@ const router = new Router({
             path: '/register',
             component: RegisterPage
         },
+        // {
+        //     name: 'signin',
+        //     path: '/login',
+        //     component: LoginPage
+        // },
         {
             name: 'meals',
             path: '/meals',

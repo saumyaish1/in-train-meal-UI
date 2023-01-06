@@ -19,6 +19,7 @@
     "core-js": "^3.8.3",
     "sweetalert": "^2.1.2",
     "vue": "^2.7.14",
+    "vue-particles": "^1.0.9",
     "vue-router": "^3.6.5",
     "vue-toast-notification": "^0.6.3",
     "vuelidate": "^0.7.7",

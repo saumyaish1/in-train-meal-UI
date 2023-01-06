@@ -1,7 +1,10 @@
 <template>
-<div>
-    <b-card-group deck >
-      <FoodItem v-for="meal in Meals" :key="meal.Item_id" :item="meal" />
+  <div class="container mb-5">
+    <h4 class="my-4 fw-600 d-blue">Our top Food options</h4>
+      <div class="row">
+        <FoodItem v-for="meal in Meals" :key="meal.Item_id" :item="meal" v-on:click="foodDetails(items)" class="col-md-4 pointer"/>
+      </div>
+   
     <!-- <FoodItem :item="Meals[0]"/>
     <FoodItem :item="Meals[1]" />
     <FoodItem :item="Meals[2]" />
@@ -11,10 +14,7 @@
     <FoodItem :item="Meals[6]" />
     <FoodItem :item="Meals[7]" />
     <FoodItem :item="Meals[8]" /> -->
-
-</b-card-group>
-
-</div>
+  </div>
 </template>
 
 <script>

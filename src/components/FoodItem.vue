@@ -1,10 +1,10 @@
 <template>
   <div class="card-style">
     <b-card class="card-style">
-      <b-button v-b-modal.modal-1>
+      
 
         <b-card-img top="true" alt="PICTURE of meal" :src="item.IMG"  />
-      </b-button>
+    
       <b-card :title="item.Item_name">
         <hr />
 
