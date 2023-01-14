@@ -9,9 +9,9 @@
         In-train delivry is one such effort to get you fresh & good quality food in train during your journey. We
         work to get this question out of your mind and make your train journey a delicious one.
     
-        The objective of Railrestro is to ensure the easy and convenient availability of great food choices with variety &
+        Our objective is to ensure the easy and convenient availability of great food choices with variety &
         assortment and prepared in hygienic kitchen conditions. We have done an extensive R & D to develop a comprehensive
-        menu items along with our empanelled vendors that suits best for the train travelers along with promotional offers
+        menu items along with our chef that suits best for the train travelers along with promotional offers
         to make your food experience an exceptional one complemented with a convenient and user friendly ordering system.
     </p>
     <h1>Our Speciality</h1>
@@ -43,5 +43,12 @@ export default {
 </script>
 
 <style scoped>
-
+p {
+    font-size: 1.25em;
+    padding: 10px;
+    width: 95%;
+    margin: 10px auto;
+    text-align: justify;
+    text-justify: auto;
+}
 </style>

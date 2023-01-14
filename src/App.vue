@@ -1,20 +1,24 @@
 <template>
   <div id="app">
     <MainMenu />
-    <b-container class="my-4">
-      <router-view></router-view>
-    </b-container>
-  </div>
+       
+    <RouterView></RouterView>
+    <AppFooter></AppFooter>
+</div>
 </template>
 
 <script>
+import { RouterView } from 'vue-router';
 import MainMenu from './components/MainMenu.vue'
+import AppFooter from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    MainMenu
-  }
+    MainMenu,
+    RouterView,
+    AppFooter
+}
 }
 </script>
 
@@ -25,6 +29,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: black;
+  margin: 0;
+  padding: 0;
+  
 
 }
+
+/* light : #FDEEDC
+#FFD8A9
+#F1A661
+#E38B29 
+../
+0A1D37
+FFBD9B
+FFD8CC
+FFEEDB*/
 </style>

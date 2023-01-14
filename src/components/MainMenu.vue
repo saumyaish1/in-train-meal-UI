@@ -12,9 +12,15 @@
                         </h2>
                     </b-navbar-nav>
                     <b-navbar-nav class="ms-auto margin">
-                        <b-nav-item href="/">Home</b-nav-item>
-                        <b-nav-item href="/register">Sign Up</b-nav-item>
-                        <b-nav-item href="/about">About Us</b-nav-item>
+                        <b-nav-item>
+                           <RouterLink tag="li" to="/">Home</RouterLink>
+                        </b-nav-item>
+
+                        <b-nav-item >
+                        <RouterLink tag="li" to="/register">Sign Up</RouterLink>
+                        </b-nav-item>
+                        <b-nav-item>
+                        <RouterLink tag="li" class-active="active" to="/about">Go to About</RouterLink></b-nav-item>
                     </b-navbar-nav>
 
                 </b-collapse>
@@ -25,14 +31,29 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
-    name: 'MainMenu'
+    name: "MainMenu",
+    components: { RouterLink }
 };
 </script>
 
 <style scoped>
 .nav-style {
     color: floralwhite;
+}
+.bg-dark{
+    background-color:#0A1D37 !important; 
+}
+.navbar-dark {
+    --bs-navbar-color:#FFD8CC;}
+nav li:hover,
+nav li:active {
+    cursor: pointer;
+}
+b{
+    color: #FFD8CC;
 }
 
 .margin{
