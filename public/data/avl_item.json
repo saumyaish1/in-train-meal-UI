@@ -12,7 +12,7 @@
         "Item_name": "Cola Cola 500ml",
         "IMG": "https://m.media-amazon.com/images/I/51NhQdFk8HL._SL1000_.jpg",
         "Discription": "This is Cold Drink made by Coca Cola.",
-        "Type": "Drink ",
+        "Type": "Drink",
         "Item_cost": "00"
     },
     {
@@ -52,7 +52,7 @@
         "Item_name": "Frooti Drink 500ml",
         "IMG": "https://gromartt.com/wp-content/uploads/2022/10/FROOTI-500ML.jpg",
         "Discription": "This is Mango juice made by Parle.",
-        "Type": "Drink ",
+        "Type": "Drink",
         "Item_cost": "00"
     },
     {
@@ -132,7 +132,7 @@
         "Item_name": "Paracetamol tablet",
         "IMG": "https://5.imimg.com/data5/SELLER/Default/2022/9/IV/UY/CG/75459511/500mg-paracetamol-tablet-500x500.jpg",
         "Discription": "Paracetamol is a commonly used medicine that can help treat pain and reduce a high temperature (fever).",
-        "Type": "MEDS ",
+        "Type": "MEDS",
         "Item_cost": "15"
     },
     {
@@ -140,7 +140,7 @@
         "Item_name": "Aciloc tablet",
         "IMG": "https://newassets.apollo247.com/pub/media/catalog/product/a/c/aci0005.jpg",
         "Discription": "It is commonly used for the diagnosis or treatment of Ulcers in stomach, Zollinger",
-        "Type": "MEDS ",
+        "Type": "MEDS",
         "Item_cost": "15"
     }
 ]

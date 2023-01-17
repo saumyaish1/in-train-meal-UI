@@ -6,6 +6,10 @@
                 <hr />
                 <form name="form" @submit.prevent="login">
                     <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="name" class="form-control" name="name" id="mane" placeholder="Your Name"
+                            v-model="form.email" 
+                            @blur="$v.form.email.$touch()" />
                         <label for="email">Email</label>
                         <input type="email" class="form-control" name="email" id="email"
                             placeholder="your email id goes here" v-model="form.email" @blur="$v.form.email.$touch()"
@@ -22,6 +26,7 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="password">Password</label>
                         <input type="password" autocomplete="off" class="form-control" name="password" id="password"
@@ -50,8 +55,9 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <div class="form-group">
-                        <button class="btn btn-primary" :disabled="$v.form.$invalid">Login</button>
+                        <button class="btn btn-danger" :disabled="$v.form.$invalid">Sign Up</button>
                         <app-spinner v-if="processing" />
                     </div>
                 </form>
@@ -79,6 +85,9 @@ export default {
     },
     validations: {
         form: {
+            name :{
+                required
+            },
             email: {
                 email,
                 required

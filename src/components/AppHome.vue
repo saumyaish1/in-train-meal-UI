@@ -34,15 +34,20 @@ export default {
 }
 
 .bg-box {
-    background: rgb(249, 160, 64);
-    background: linear-gradient(90deg, rgba(249, 160, 64, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 99%);
+    /* background: rgb(249, 160, 64);
+    background: linear-gradient(90deg, rgba(249, 160, 64, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 99%); */
+    margin-top: 2px;
+    height: max-content;
+    background: url(../assets/food_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-.bg-box {
+/* .bg-box {
     background-image: url("../assets/food_bg.jpg");
     /* -webkit-filter: blur(2px); */
     /* background-color: #FFEEDB;
       background-image: linear-gradient(62deg, #FFD8CC 5%, #FFBD9B 100%); */
-}
+
 
 /* Position text in the middle of the page/image */
 </style>

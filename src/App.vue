@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <MainMenu />
-       
     <RouterView></RouterView>
     <AppFooter></AppFooter>
 </div>
@@ -31,6 +30,7 @@ export default {
   color: black;
   margin: 0;
   padding: 0;
+  background-color: #FFEEDB;
   
 
 }
